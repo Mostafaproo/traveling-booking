@@ -121,24 +121,18 @@ export default {
   transform: translate(-50%, -50%);
   width: 100%;
   color: #fff;
-  z-index: 22;
-
   &__booking-search {
-    background-color: rgba(20, 24, 28, 0.6);
+    background-color: rgb(20 24 28 / 49%);
     max-width: 900px;
     margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden !important;
   }
   &__booking-title {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     background: #14181c;
+    text-align: center;
     color: #fff;
     padding: 5px 20px;
     position: relative;
@@ -162,6 +156,8 @@ export default {
     margin-bottom: 15px;
     label {
       display: block;
+      font-size: 1.6rem;
+      margin: 1rem 0;
     }
     .select-input-form {
       width: 100%;
@@ -177,6 +173,7 @@ export default {
       appearance: none;
       padding: 0 15px;
       border-radius: 3px;
+      font-size: 1.4rem;
       option {
         background-color: #14181c;
         margin-top: 5px;
