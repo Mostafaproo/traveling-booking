@@ -5,19 +5,16 @@
   </div>
 </template>
 <script>
-import BaseLoader from "@/components/common/BaseLoader/index.vue";
+import BaseLoader from '@/components/common/BaseLoader/index.vue'
 export default {
-  name: "DefaultLayout",
+  name: 'DefaultLayout',
   components: { BaseLoader },
   head() {
     return {
       htmlAttrs: {
         lang: this.$i18n.locale,
       },
-    };
+    }
   },
-  data() {
-    return {};
-  },
-};
+}
 </script>
