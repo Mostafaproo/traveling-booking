@@ -38,7 +38,7 @@ export default {
   i18n: {
     seo: true,
     strategy: 'prefix',
-    defaultLocale: 'en',
+    defaultLocale: 'ar',
     vueI18n: {
       fallbackLocale: 'en',
     },

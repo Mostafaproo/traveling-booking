@@ -42,10 +42,10 @@ export default {
 }
 
 .blog-box {
-  width: 350px;
+  // width: 350px;
   background-color: #ffffff;
   border: 1px solid #ececec;
-  margin: 20px 20px;
+  // margin: 20px 20px;
 
   &__blog-img {
     width: 100%;
@@ -90,23 +90,23 @@ export default {
   }
 }
 @media (max-width: 1250px) {
-  .blog-box {
-    width: 300px;
-  }
+  // .blog-box {
+  //   width: 300px;
+  // }
 }
-@media (max-width: 1100px) {
-  .blog-box {
-    width: 70%;
-  }
-}
+// @media (max-width: 1100px) {
+//   .blog-box {
+//     width: 70%;
+//   }
+// }
 
-@media (max-width: 550px) {
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
-}
+// @media (max-width: 550px) {
+//   .blog-box {
+//     margin: 20px 10px;
+//     width: 100%;
+//   }
+//   #blog {
+//     padding: 20px;
+//   }
+// }
 </style>

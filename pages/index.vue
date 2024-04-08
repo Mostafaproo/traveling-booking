@@ -1,17 +1,28 @@
 <template>
   <div>
     <div class="wrapper">
+      <!-- Navigation _____________________ -->
       <MenuNavigation />
+      <!-- form booking _____________________ -->
       <TravelingForm />
     </div>
+    <!-- Blogs _____________________ -->
     <div class="container">
       <!--blog-heading--------------->
       <div class="blog-heading">
         <span>My Recent Posts</span>
         <h3>My Blog</h3>
       </div>
-      <section id="blog">
-        <Blog v-for="(blog, index) in limitedBlogs" :key="index" :blog="blog" />
+      <section>
+        <div class="row">
+          <div
+            v-for="(blog, index) in limitedBlogs"
+            :key="index"
+            class="col-md-4"
+          >
+            <Blog :blog="blog" />
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -65,14 +76,6 @@ export default {
   background-size: cover;
   height: 100vh;
 }
-#blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
 .blog-heading {
   display: flex;
   flex-direction: column;
@@ -81,11 +84,12 @@ export default {
   margin-top: 4rem;
   span {
     color: #f33c3c;
+    font-size: 1.4rem !important;
   }
   h3 {
     font-size: 2.4rem;
     color: #2b2b2b;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 </style>
