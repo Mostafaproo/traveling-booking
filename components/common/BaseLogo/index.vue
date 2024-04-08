@@ -1,5 +1,7 @@
 <template>
-  <h1 class="logo">Traveling</h1>
+  <nuxt-link :to="this.localePath('/')">
+    <h1 class="logo">Traveling</h1>
+  </nuxt-link>
 </template>
 
 <script>

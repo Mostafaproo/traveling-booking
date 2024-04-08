@@ -1,7 +1,7 @@
-import header from './header'
+import all from './all'
 export default () => {
   return {
-    ...header,
+    ...all,
     otherLang: "Arabic",
     lang: {
       char: "en",

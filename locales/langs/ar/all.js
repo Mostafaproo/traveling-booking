@@ -1,0 +1,15 @@
+export default {
+  from: 'من',
+  to: 'الى',
+  trip_date: 'تاريخ الرحلة',
+  ticket_class: 'فئة التذكرة',
+  trip_type: 'نوع الرحلة',
+  passengers: 'المسافرين',
+  economy: 'توفير',
+  business: 'عمل',
+  first: 'الأولى',
+  one_way: 'ذهاب فقط',
+  round_trip: 'ذهاب وعودة',
+  search: 'بحث',
+  booking_title: 'ابحث عن وكالة سفر أينما كنت',
+}

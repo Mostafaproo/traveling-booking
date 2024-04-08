@@ -1,0 +1,15 @@
+export default {
+  from: 'From',
+  to: 'To',
+  trip_date: 'Trip Date',
+  ticket_class: 'Ticket Class',
+  trip_type: 'Trip Type',
+  passengers: 'Passengers',
+  economy: 'Economy',
+  business: 'Business',
+  first: "First",
+  one_way: "One Way",
+  round_trip : "Round Trip",
+  search: "Search",
+  booking_title: 'Search for travel agency Wherever Your Are',
+}

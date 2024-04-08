@@ -1,12 +1,13 @@
 <template>
-  <b-dropdown id="dropdown-1" :text="$t('lang.name')" class="m-md-2">
-    <b-dropdown-item @click.prevent.stop="changeLang()">
-      <span> en </span>
-    </b-dropdown-item>
-    <b-dropdown-item @click.prevent.stop="changeLang()">
-      <span> ar </span>
-    </b-dropdown-item>
-  </b-dropdown>
+  <select v-model="selectedLang" @change="changeLang">
+    <option
+      v-for="locale in availableLocales"
+      :key="locale.code"
+      :value="locale.code"
+    >
+      {{ locale.name }}
+    </option>
+  </select>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ export default {
   name: 'LanguageSwitcher',
   data() {
     return {
+      selectedLang: this.$i18n.locale,
       locales: [
         { code: 'ar', name: 'Ar' },
         { code: 'en', name: 'En' },
@@ -22,13 +24,15 @@ export default {
   },
   computed: {
     availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+      return this.$i18n.locales.filter(
+        (i) => i.code !== this.$i18n.locale || 'ar'
+      )
     },
   },
   methods: {
     changeLang() {
       this.$router
-        .replace(this.switchLocalePath(this.availableLocales[0].code))
+        .replace(this.switchLocalePath(this.selectedLang))
         .then(() => {
           location.reload()
         })
@@ -37,4 +41,20 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+select {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+select option {
+  color: #000;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+</style>

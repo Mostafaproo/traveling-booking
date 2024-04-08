@@ -2,13 +2,13 @@
   <div class="form-content">
     <div class="form-content__booking-search">
       <div class="form-content__booking-title">
-        <h2>Search for travel agency Wherever Your Are</h2>
+        <h2>{{ $t('booking_title') }}</h2>
       </div>
       <div class="form-content__booking-form">
         <div class="form-content__pick-up">
           <div class="row">
             <div class="col-md-6">
-              <label for="from">From:</label>
+              <label for="from">{{$t('from')}}:</label>
               <input
                 id="from"
                 v-model="formData.from"
@@ -19,7 +19,7 @@
             </div>
 
             <div class="col-md-6">
-              <label for="to">To:</label>
+              <label for="to">{{$t('to')}}:</label>
               <input
                 id="to"
                 v-model="formData.to"
@@ -30,7 +30,7 @@
             </div>
 
             <div class="col-md-6">
-              <label for="tripDate">Trip Date:</label>
+              <label for="tripDate">{{$t('trip_date')}}:</label>
               <input
                 id="tripDate"
                 v-model="formData.tripDate"
@@ -41,33 +41,33 @@
             </div>
 
             <div class="col-md-6">
-              <label for="ticketClass">Ticket Class:</label>
+              <label for="ticketClass">{{$t('ticket_class')}}:</label>
               <select
                 id="ticketClass"
                 v-model="formData.ticketClass"
                 class="select-input-form"
                 required
               >
-                <option value="Economy">Economy</option>
-                <option value="Business">Business</option>
-                <option value="First">First</option>
+                <option value="Economy">{{$t('economy')}}</option>
+                <option value="Business">{{$t('business')}}</option>
+                <option value="First">{{$t('first')}}</option>
               </select>
             </div>
 
             <div class="col-md-6">
-              <label for="tripType">Trip Type:</label>
+              <label for="tripType">{{$t('trip_type')}}:</label>
               <select
                 id="tripType"
                 v-model="formData.tripType"
                 class="select-input-form"
                 required
               >
-                <option value="One-way">One-way</option>
-                <option value="Round-trip">Round-trip</option>
+                <option value="One-way">{{$t('one_way')}}</option>
+                <option value="Round-trip">{{$t('round_trip')}}</option>
               </select>
             </div>
             <div class="col-md-6">
-              <label for="passengers">Passengers:</label>
+              <label for="passengers">{{$t('passengers')}}:</label>
               <input
                 id="passengers"
                 v-model="formData.passengers"
@@ -80,7 +80,7 @@
         </div>
         <div class="form-content__action text-center">
           <button type="submit" class="submit" @click="searchTravelingHandler">
-            Search
+            {{$t('search')}}
           </button>
         </div>
       </div>
@@ -148,7 +148,6 @@ export default {
   }
   &__booking-form {
     padding: 20px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   &__pick-up {
@@ -158,6 +157,9 @@ export default {
       display: block;
       font-size: 1.6rem;
       margin: 1rem 0;
+      html:lang(ar) &{
+        text-align: justify;
+      }
     }
     .select-input-form {
       width: 100%;
@@ -183,16 +185,6 @@ export default {
           background-color: #9f2064;
         }
       }
-    }
-    .from-control-icon {
-      position: absolute;
-      right: 0;
-      color: rgba(255, 255, 255, 0.6);
-      background-color: transparent;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
     }
     input::-webkit-calendar-picker-indicator {
       color: rgba(255, 255, 255, 0.6) !important;
