@@ -10,8 +10,8 @@
     <div class="container">
       <!--blog-heading--------------->
       <div class="blog-heading">
-        <span>My Recent Posts</span>
-        <h3>My Blog</h3>
+        <span>{{ $t('recent_blogs') }}</span>
+        <h3>{{ $t('blogs') }}</h3>
       </div>
       <section>
         <div class="row">

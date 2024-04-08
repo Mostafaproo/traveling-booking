@@ -4,7 +4,7 @@ export default {
   head: {
     title: 'travel-app',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ar',
     },
     meta: [
       { charset: 'utf-8' },
@@ -40,7 +40,7 @@ export default {
     strategy: 'prefix',
     defaultLocale: 'ar',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'ar',
     },
     lazy: true,
     langDir: 'locales/langs/',

@@ -11,5 +11,7 @@ export default {
   one_way: 'ذهاب فقط',
   round_trip: 'ذهاب وعودة',
   search: 'بحث',
+  blogs: 'مدوناتى',
+  recent_blogs: 'مدوناتى الحالية',
   booking_title: 'ابحث عن وكالة سفر أينما كنت',
 }

@@ -11,5 +11,7 @@ export default {
   one_way: "One Way",
   round_trip : "Round Trip",
   search: "Search",
+  blogs: "My Blogs",
+  recent_blogs: 'My Recent Blogs',
   booking_title: 'Search for travel agency Wherever Your Are',
 }
