@@ -71,12 +71,13 @@ export default {
       text-overflow: ellipsis;
       margin: 20px 0px;
     }
-    a {
-      color: #0f0f0f;
-      &:hover {
-        color: #c74242;
-        transition: all ease 0.3s;
-      }
+  }
+  &__read-more {
+    color: #0f0f0f;
+    font-size: 1.7rem;
+    &:hover {
+      color: #c74242;
+      transition: all ease 0.3s;
     }
   }
   &__date {
@@ -85,28 +86,10 @@ export default {
   }
   &__blog-title {
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #272727;
+    text-transform: capitalize;
   }
 }
-@media (max-width: 1250px) {
-  // .blog-box {
-  //   width: 300px;
-  // }
-}
-// @media (max-width: 1100px) {
-//   .blog-box {
-//     width: 70%;
-//   }
-// }
 
-// @media (max-width: 550px) {
-//   .blog-box {
-//     margin: 20px 10px;
-//     width: 100%;
-//   }
-//   #blog {
-//     padding: 20px;
-//   }
-// }
 </style>
