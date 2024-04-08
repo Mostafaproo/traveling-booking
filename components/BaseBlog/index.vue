@@ -2,7 +2,7 @@
   <div class="blog-container">
     <div class="blog-box">
       <div class="blog-box__blog-img">
-        <!-- <img alt="blog" src="images/blog-1.jpeg" /> -->
+        <img draggable="false" alt="blog" :src="require(`../../assets/images/${blog.id}.webp`)" />
       </div>
       <div class="blog-box__blog-text">
         <span class="blog-box__date">18 July 2021 / Web Design</span>
