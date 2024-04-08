@@ -42,11 +42,9 @@ export default {
 }
 
 .blog-box {
-  // width: 350px;
   background-color: #ffffff;
   border: 1px solid #ececec;
-  // margin: 20px 20px;
-
+  text-align: justify;
   &__blog-img {
     width: 100%;
     height: auto;
